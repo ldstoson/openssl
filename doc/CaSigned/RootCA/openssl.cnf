@@ -1,0 +1,40 @@
+[ ca ]
+default_ca = CA_LOC
+
+[ CA_LOC ]
+prompt            = no
+policy            = policy
+default_days      = 365
+
+[ policy ]
+countryName            = supplied
+stateOrProvinceName    = optional
+localityName           = optional
+organizationName       = optional
+organizationalUnitName = optional
+commonName             = supplied
+emailAddress           = optional
+
+
+[ req ]
+prompt             = no
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_ca
+
+
+[ req_distinguished_name ]
+countryName            = KR
+stateOrProvinceName    = Seoul
+localityName           = Jongro-gu
+0.organizationName     = AsianaIDT
+organizationalUnitName = TI Team
+commonName             = AsianaIDT OpenSSL Edu
+emailAddress           = toson@asianaidt.com
+
+
+[ v3_ca ]
+basicConstraints       = critical,CA:TRUE
+subjectKeyIdentifier   = hash
+authorityKeyIdentifier = keyid:always,issuer:always
+keyUsage               = critical, digitalSignature, cRLSign, keyCertSign
