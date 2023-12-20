@@ -26,10 +26,10 @@ x509_extensions    = v3_ca
 [ req_distinguished_name ]
 countryName            = KR
 stateOrProvinceName    = Seoul
-localityName           = Jongro-gu
+localityName           = Jongno-gu
 0.organizationName     = AsianaIDT
 organizationalUnitName = TI Team
-commonName             = AsianaIDT OpenSSL Edu
+commonName             = Asiana IDT Inc. OpenSSL Edu
 emailAddress           = toson@asianaidt.com
 
 

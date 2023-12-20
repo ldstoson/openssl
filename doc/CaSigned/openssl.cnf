@@ -10,8 +10,8 @@ req_extensions     = v3_req
 [ req_distinguished_name ]
 countryName            = KR
 stateOrProvinceName    = Seoul
-localityName           = Jongro-bu
-organizationName       = AsianaIDT
+localityName           = Jongno-gu
+organizationName       = Asiana IDT Inc.
 organizationalUnitName = TI Team
 commonName             = *.asianaidt.com
 emailAddress           = toson@asianaidt.com
