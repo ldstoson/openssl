@@ -1,0 +1,9 @@
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: openssledu
+    keyStoreType: PKCS12
+    keyAlias: openssl.asianaidt.com
+    protocol: TLS
+    enabled-protocols: TLSv1.2
